@@ -35,7 +35,7 @@ const Edit = () => {
     }, []);
   
     const can = () => {
-       nav("/edt")
+       nav("/about")
     };
   
     const submit = (data) => {
