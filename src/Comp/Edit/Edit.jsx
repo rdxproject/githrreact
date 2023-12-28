@@ -2,12 +2,16 @@ import React, { useState, useEffect } from 'react';
 import './Edit.css';
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom'
+
 
 const Edit = () => {
     const [puser, setpuser] = useState();
     const { register, handleSubmit, setValue } = useForm(); // Use setValue from react-hook-form
 
     console.log(puser)
+    const nav=useNavigate()
+
   
     const data = () => {
       let id = localStorage.getItem('id');
@@ -31,7 +35,7 @@ const Edit = () => {
     }, []);
   
     const can = () => {
-      window.location.reload();
+       nav("/edt")
     };
   
     const submit = (data) => {
