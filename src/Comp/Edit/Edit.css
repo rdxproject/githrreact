@@ -1,0 +1,45 @@
+form {
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    margin-right: 22px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 2px solid black;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 34px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 22px;
+    cursor: pointer;
+  }
+
+  button.cancel {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  .fornco {
+    display: flex;
+    width: 39vw;
+    margin: 33px;
+}
+  

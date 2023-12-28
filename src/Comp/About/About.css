@@ -1,0 +1,21 @@
+
+.but1{
+    font-size: 34px;
+    margin: 20px;
+}
+.but2{
+    font-size: 34px;
+    margin: 20px;
+}
+.aboutcon{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.aboutcon h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
