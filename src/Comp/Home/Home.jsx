@@ -8,7 +8,7 @@ const Home = () => {
     const [user, setuser] = useState()
 
     const userdatas=()=>{
-        axios.get("http://localhost:5000/user/find").then((res)=>{
+        axios.get("https://hrnode.onrender.com/user/find").then((res)=>{
             setuser(res.data.data)
         }).catch((err)=>{
             console.log(err)

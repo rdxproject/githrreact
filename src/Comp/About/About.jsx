@@ -12,7 +12,7 @@ const About = () => {
     const data=()=>{
         let id=localStorage.getItem('id')
         const data={id:id}
-        axios.post(`http://localhost:5000/user/find`,data).then((res)=>{
+        axios.post(`https://hrnode.onrender.com/user/find`,data).then((res)=>{
            console.log(res.data.data)
            setpuser(res.data.data)
         }).catch((err)=>{
@@ -30,7 +30,7 @@ const About = () => {
 
     const del=()=>{
       let id=localStorage.getItem('id')
-      axios.delete(`http://localhost:5000/user/delete/${id}`).then((res)=>{
+      axios.delete(`https://hrnode.onrender.com/user/delete/${id}`).then((res)=>{
         console.log(res)
         alert("successfully delete")
         nav("/")

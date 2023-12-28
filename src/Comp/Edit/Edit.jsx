@@ -12,7 +12,7 @@ const Edit = () => {
     const data = () => {
       let id = localStorage.getItem('id');
       const data = { id: id };
-      axios.post('http://localhost:5000/user/find', data)
+      axios.post('https://hrnode.onrender.com/user/find', data)
         .then((res) => {
           setpuser(res.data.data);
           // Set initial values using setValue
@@ -37,7 +37,7 @@ const Edit = () => {
     const submit = (data) => {
       let id2 = localStorage.getItem('id');
       console.log(data);
-      axios.put(`http://localhost:5000/user/up/${id2}`, data)
+      axios.put(`https://hrnode.onrender.com/user/up/${id2}`, data)
         .then((res) => {
           alert('Successfully updated');
           console.log(res);
